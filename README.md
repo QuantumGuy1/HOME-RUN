@@ -52,7 +52,7 @@ Installation
 
 **Clone the repository:**
 
-- git clone https://github.com/your-username/baseball-website.git
+- git clone https://github.com/QuantumGuy1/HOME-RUN.git
 
 **Change to the project directory:**
 
