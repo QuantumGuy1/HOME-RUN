@@ -1,0 +1,147 @@
+
+
+/* static/css/baseball-theme.css */
+/* static/css/baseball-theme.css */
+/* static/css/baseball-theme.css */
+/* static/css/baseball-theme.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #88dd77, #88dd77 50%, #87cefa 50%, #87cefa);
+    background-size: 100% 100%;
+}
+
+/* ... rest of your styles ... */
+
+/* header {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+} */
+/* static/css/baseball-theme.css */
+/* ... your existing styles ... */
+
+/* .bold-player {
+    font-weight: bold;
+} */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+h1, h2 {
+    color: black;
+}
+
+/* Baseball-specific styles */
+.team-name {
+    color: #007bff; /* Blue color */
+}
+
+.score {
+    font-weight: bold;
+    color: #ff6600; /* Orange color */
+}
+
+.player-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.mlb-logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px; /* Adjust the width for your standard logo size */
+    height: auto;
+}
+
+
+/* static/css/baseball-theme.css */
+/* ... your existing styles ... */
+
+/* static/css/baseball-theme.css */
+/* ... your existing styles ... */
+
+/* static/css/baseball-theme.css */
+/* ... your existing styles ... */
+
+/* static/css/baseball-theme.css */
+/* ... your existing styles ... */
+
+/* static/css/baseball-theme.css */
+/* ... your existing styles ... */
+
+/* static/css/baseball-theme.css */
+/* ... your existing styles ... */
+
+/* static/css/baseball-theme.css */
+
+/* static/css/baseball-theme.css */
+/* ... your existing styles ... */
+
+
+/* static/css/baseball-theme.css */
+/* ... your existing styles ... */
+
+.center-content h1 {
+    font-weight: bold;
+}
+
+/* ... rest of your styles ... */
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.center-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Optional: Center-align the text within the centered content */
+}
+
+/* ... rest of your styles ... */
+
+/* ... your existing styles ... */
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align logos to the right side */
+    position: absolute;
+    top: 20px; /* Adjust this value to your preference */
+    right: 20px; /* Position to the right */
+}
+
+.team-logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Additional styles for logos after Reds */
+.logo-container.left {
+    position: absolute;
+    top: 20px; /* Adjust this value to your preference */
+    left: 20px; /* Position to the left */
+    right: auto;
+    align-items: flex-start; /* Align logos to the left */
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .logo-container {
+        position: static; /* Remove the absolute positioning on smaller screens */
+        align-items: center; /* Center align logos on smaller screens */
+    }
+}

@@ -1,0 +1,67 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME RUN</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='js/favicon.ico') }}">
+
+</head>
+<body>
+    <div class="logo-container">
+        <img src="{{ url_for('static', filename='images/mets.png') }}" alt="Mets Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/phillies.png') }}" alt="Phillies Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/astros.png') }}" alt="Astros Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/bluejays.png') }}" alt="Blue Jays Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/dodgers.png') }}" alt="Phillies Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/yankees.png') }}" alt="Phillies Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/redsox.png') }}" alt="Phillies Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/angels.png') }}" alt="Phillies Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/bayrays.png') }}" alt="Phillies Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/athletics.png') }}" alt="Phillies Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/rangers.png') }}" alt="Phillies Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/wsox.png') }}" alt="Phillies Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/reds.png') }}" alt="Phillies Logo" class="team-logo">
+    </div>
+
+    <div class="logo-container left">
+        <!-- Logos after Reds will be aligned to the left -->
+        <img src="{{ url_for('static', filename='images/orioles.png') }}" alt="Orioles Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/royals.png') }}" alt="Royals Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/padres.png') }}" alt="Padres Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/giants.png') }}" alt="Giants Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/braves.png') }}" alt="Braves Logo" class="team-logo">
+        <img src="{{ url_for('static', filename='images/arizona.png') }}" alt="Arizona Logo" class="team-logo">
+    </div>
+    
+    <header>
+        <img src="{{ url_for('static', filename='images/mlb-logo.png') }}" alt="MLB Logo" class="mlb-logo">
+        <!-- ... other header content ... -->
+    </header>
+    <div class="center-content">
+        <h1>Welcome to the "Home Run"</h1>
+        
+        <h2>Ongoing Scores</h2>
+        <ul>
+            {% for score in scores %}
+            <li>{{ score.home_team }} {{ score.home_score }} - {{ score.away_team }} {{ score.away_score }}</li>
+            {% endfor %}
+        </ul>
+        
+        <h2>Players</h2>
+        <ul>
+            {% for player in players %}
+            <li class="bold-player">{{ player.name }} ({{ player.team }}) - {{ player.position }}</li>
+            {% endfor %}
+        </ul>
+        <div class="scoreboard" id="scoreboard">
+            <!-- Scores will be displayed here -->
+        </div>
+    
+        <button id="update-button">Update Scoreboard</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/scoreboard.js') }}"></script>
+</body>
+</body>
+</html>
